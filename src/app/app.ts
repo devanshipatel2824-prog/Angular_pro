@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
   imports: [RouterOutlet],
   //templateUrl: './app.html',
   //styleUrl: './app.css'
-template:`<h1>Hello World</h1> <h1>Hii</h1>`,
+template:`<h1>Hello World</h1> <h1>Hii Hello</h1>`,
 
 styles:
 'h1{ color:red;}'

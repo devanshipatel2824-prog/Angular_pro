@@ -1,0 +1,28 @@
+footer {
+    background-color: #1c6edaeb;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.footer-scroll {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    
+    /* Animation */
+    animation: scrollText 10s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}

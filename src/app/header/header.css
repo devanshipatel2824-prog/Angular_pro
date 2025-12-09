@@ -1,0 +1,45 @@
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    margin:  15px;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: blue;
+}
+.header-right{
+    text-align: right;
+    gap:20px;
+}
+.search-box {
+    padding: 7px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    
+}
+.login-icon img {
+    width: 28px;
+    height: 28px;
+    font-size: medium;
+    cursor: pointer;
+    filter: brightness(0);
+}
+
+.login-icon img:hover {
+    filter: brightness(0.3);
+}

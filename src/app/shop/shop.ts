@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-shop',
@@ -7,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './shop.css',
 })
 export class Shop {
+constructor(private router:Router) {}
 
+  addToCart() {
+    this.router.navigate(['checkout']);  // redirect
+  }
 }

@@ -1,0 +1,45 @@
+
+.profile-card {
+  width: 350px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.profile-image img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #2d73db;
+  margin-bottom: 10px;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.info p {
+  font-size: 16px;
+  margin: 8px 0;
+  color: #555;
+}
+
+.edit-btn {
+  margin-top: 15px;
+  padding: 10px 22px;
+  background: #2d73db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #1d5bbf;
+}

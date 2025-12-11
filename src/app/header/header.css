@@ -1,4 +1,4 @@
-header {
+/* header {
     background-color: #f2f2f2;
     padding: 20px;
     text-align: center;
@@ -42,4 +42,54 @@ nav a:hover {
 
 .login-icon img:hover {
     filter: brightness(0.3);
+} */
+
+header {
+    background: #1c3dc2;
+    color: white;
+    padding: 15px;
+    font-size: 24px;
+    text-align: center;
+    border:#1f9298;
+}
+
+
+nav {
+    background: #1f9298;
+    color: aliceblue;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+nav a {
+    text-decoration: none;     
+    color: white;    
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0px;
+}
+
+nav a:hover {
+    color: #001aff;      
+}
+
+
+.header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-box {
+    padding: 6px;
+    font-size: 14px;
+}
+
+.login-icon img {
+    width: 28px;
+    height: 28px;
 }

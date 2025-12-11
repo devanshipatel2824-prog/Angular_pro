@@ -15,7 +15,7 @@ footer {
     color: black;
     
     /* Animation */
-    animation: scrollText 10s linear infinite;
+    animation: scrollText 15s linear infinite;
 }
 
 @keyframes scrollText {

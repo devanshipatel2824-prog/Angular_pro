@@ -13,6 +13,18 @@
     <textarea placeholder="Your Message" rows="4" required></textarea>
 
     <button type="submit">Send Message</button>
-  </form>
+
+
+
+ </form>
 
 </div>
+<!-- interpolution -->
+<p>{{name}}</p><br/>
+<!-- property binding -->
+<img [src]="imageurl" alt="image "/><br/>
+<!-- Two-way binding -->
+  <input type="text" [(ngModel)]="username">
+<p>{{username}}</p>
+<!-- Signal -->
+<h5>{{studentname()}}</h5>

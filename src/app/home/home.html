@@ -1,0 +1,18 @@
+<div class="slider-box">
+
+  <div class="arrow left" (click)="prevSlide()">❮</div>
+  <div class="slides" [style.transform]="'translateX(-' + currentIndex * 100 + 'vw)'">
+    <div class="slide">
+      <img [src]="imageurl1" alt="Slide 1">
+       
+    </div>
+    <div class="slide">
+      <img [src]="imageurl2" alt="Slide 2">  
+    </div>
+    <div class="slide">
+      <img [src]="imageurl3" alt="Slide 3">
+    </div>
+  </div>
+  <div class="arrow right" (click)="nextSlide()">❯</div>
+
+</div>

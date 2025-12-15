@@ -1,7 +1,12 @@
 .footer{
-    height: 70px;
-    font-size: 30px;
-    background-color:#ff7043;
-    /* padding: 20px; */
-    width: 103%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ff5100;    /* Blue color */
+  color: white;
+  text-align: center;
+  padding: 15px 10px; 
+  font-size: 16px;
+  
 }

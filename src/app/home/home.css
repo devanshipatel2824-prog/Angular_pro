@@ -1,53 +1,43 @@
-/* Common slider settings */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .slider-box {
   position: relative;
   width: 100vw;
-  height: 100vh;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
-  height: 100%;
-  transition: transform 0.4s ease;
+  width: 300vw;   /* 3 slides = 300vw */
+  transition: transform 0.5s ease;
 }
 
 .slide {
-  position: relative;
   width: 100vw;
-  height: 100vh;
   flex-shrink: 0;
 }
 
 .slide img {
   width: 100%;
-  height: 100%;
+  height: 600px;
   object-fit: cover;
 }
+
+/* Arrows */
 .arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 40px;
+  font-size: 30px;
+  background: rgba(0,0,0,0.5);
   color: #fff;
-  background: rgba(0,0,0,0.6);
-  padding: 15px;
-  border-radius: 50%;
+  padding: 10px;
   cursor: pointer;
   z-index: 10;
 }
 
 .arrow.left {
-  left: 20px;
+  left: 10px;
 }
 
 .arrow.right {
-  right: 20px;
+  right: 10px;
 }

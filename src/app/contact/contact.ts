@@ -8,5 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './contact.css'
 })
 export class Contact {
- protected studentname?: string;
+ protected Email="devanshi@gmal.com";
+ protected Contact_No=5631478965;
+ protected Address="Dungri Reliya Faliya";
 }

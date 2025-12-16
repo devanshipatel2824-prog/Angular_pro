@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RouterLink, RouterOutlet, RouterLinkWithHref } from "@angular/router";
+import { Router } from 'express';
 
 @Component({
   selector: 'app-about',
-  imports: [],
+  imports: [RouterOutlet, RouterLinkWithHref],
   templateUrl: './about.html',
   styleUrl: './about.css',
 })

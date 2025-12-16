@@ -49,6 +49,10 @@ export const routes: Routes = [
     component:Contact
 },
 {
+    path:'about',
+    loadChildren:()=>import('./about/about.routes').then(m=>m.aboutroutes),
+},
+{
     path:"**",
     component:PageNotFound
 }

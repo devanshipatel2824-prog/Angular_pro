@@ -7,8 +7,6 @@
     gap: 20px;
     font-family: Arial, sans-serif;
 }
-
-/* Title */
 .contact-title {
     grid-column: 1 / -1;
     text-align: center;
@@ -16,8 +14,6 @@
     margin-bottom: 20px;
     color: #333;
 }
-
-/* Card */
 .page {
     background: linear-gradient(135deg, #ffffff, #f5f5f5);
     border-radius: 15px;
@@ -26,21 +22,15 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-/* Hover effect */
 .page:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
-
-/* Headings */
 .page h1 {
     font-size: 22px;
     margin-bottom: 10px;
     color: #444;
 }
-
-/* Text */
 .page p {
     font-size: 16px;
     color: #666;

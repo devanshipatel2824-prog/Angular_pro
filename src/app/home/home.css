@@ -1,52 +1,38 @@
-body {
-  margin: 0;
-}
-
-/* Slider container */
-.slider-box {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Slides */
-.slides {
+.home-section {
   display: flex;
-  width: 300%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+  flex-wrap: wrap;  
 }
-
-.slide {
+.home-image {
+  flex: 1;
+  min-width: 300px;
+}
+.home-image img {
   width: 100%;
-  height: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
 }
-
-.slide img {
-  width: 100%;
-  height: 600px;
-  object-fit: cover;   /* no side space */
+.home-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
 }
-
-/* Arrows */
-.arrow {
-  position: absolute;
-  top: 50%;
-  font-size: 40px;
-  background: rgba(0,0,0,0.6);
-  color: white;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
+.hotel-name {
+  font-size: 42px;
+  color: #ff5a00;
+  margin-bottom: 15px;
 }
-
-.left {
-  left: 20px;
+.hotel-tagline {
+  font-size: 22px;
+  color: #444;
+  margin-bottom: 15px;
 }
-
-.right {
-  right: 20px;
+.hotel-desc {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
 }

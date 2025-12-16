@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { Router } from 'express';
+import { RouterOutlet } from "../../../node_modules/@angular/router/types/_router_module-chunk";
 
 
 @Component({

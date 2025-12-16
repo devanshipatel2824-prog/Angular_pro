@@ -1,13 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
   imports: [FormsModule],
   templateUrl: './contact.html',
-  styleUrl: './contact.css',
+  styleUrl: './contact.css'
 })
 export class Contact {
-protected username=signal('devanshi');
-protected name?:string;
+ protected studentname?: string;
 }

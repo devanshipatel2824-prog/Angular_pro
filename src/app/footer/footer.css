@@ -1,14 +1,15 @@
 footer {
+  background-color: #007bff; /* same blue color */
+  color: white;
+  text-align: left;
+  padding: 5px 20px; /* smaller padding */
+  font-size: 14px; /* smaller text */
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
-  background: #0d6efd;    /* Blue color */
-  color: white;
-  text-align: center;
-  padding: 48px 0;
-  font-size: 16px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3); /* optional */
 }
+
 
 
 .footer-scroll {

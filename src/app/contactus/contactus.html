@@ -1,30 +1,35 @@
-<div class="contact-container">
 
-  <h3 class="thank-msg">Thank you for visit 😊</h3>
-  <div class="contact-details">
-    <p><strong>Email:</strong> devanshipatel@gamil.com</p>
-    <p><strong>Phone:</strong> +91 8141615559</p>
-    <p><strong>Address:</strong> Dungri Reliya Faliya</p>
-  </div>
+<form>
+    <input placeholder="Name" [(ngModel)]="nameInput" name="name">
+    <input placeholder="Email" [(ngModel)]="emailInput" name="email">
+    <input placeholder="Password" type="password"
+          [(ngModel)]="passwordInput" name="password">
+    <input placeholder="Address" [(ngModel)]="addressInput" name="address">
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" rows="4" required></textarea>
+    <button type="button" (click)="add()">Add</button>
+  </form>
 
-    <button type="submit">Send Message</button>
+  <hr>
 
+  <table border="1">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Password</th>
+      <th>Address</th>
+      <th>Action</th>
+    </tr>
 
-
- </form>
-
-</div>
-<!-- interpolution -->
-<p>{{name}}</p><br/>
-<!-- property binding -->
-<img [src]="imageurl" alt="image "/><br/>
-<!-- Two-way binding -->
-  <input type="text" [(ngModel)]="username">
-<p>{{username}}</p>
-<!-- Signal -->
-<h5>{{studentname()}}</h5>
+    @for (user of users; track $index) {
+      <tr>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.address }}</td>
+        <td>
+ <button (click)="edit($index)">Edit</button>
+          <button (click)="delete($index)">Delete</button>
+        </td>
+      </tr>
+    }
+  </table>

@@ -1,4 +1,4 @@
-
+<!-- 
 <form>
     <input placeholder="Name" [(ngModel)]="nameInput" name="name">
     <input placeholder="Email" [(ngModel)]="emailInput" name="email">
@@ -32,4 +32,23 @@
         </td>
       </tr>
     }
-  </table>
+  </table> -->
+<button (click)="openForm()">Add Contact</button>
+
+<br><br>
+
+<!-- Child component -->
+@if(showForm){
+<app-chid-componet (contactAdded)="addContactToParent($event)"></app-chid-componet>
+}
+<hr>
+
+<h3>Contact List</h3>
+
+<ul>
+  @for (c of contacts; track $index) {
+    <li>
+      {{ c.name }} - {{ c.phone }} - {{ c.email }}
+    </li>
+  }
+</ul>
